@@ -1,0 +1,23 @@
+.header{
+    position: relative;
+    height:27vh;
+    border-bottom: 2px solid black;
+    background-image: url("/img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.motto{
+    position: absolute;
+    bottom: 0;
+    left: 12%;
+    margin: 10px;
+    height: 25px;
+    font-family: Salsa;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2vh;
+    text-align: center;;
+    line-height: 12px;
+    color: #FFF7F7;
+}

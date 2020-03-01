@@ -1,0 +1,82 @@
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    width: 4vw;
+    height: 4vw;
+    float: left;
+    background: #fac500;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 105px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+
+.github a:hover {background: #191919; color: #fff;}
+.youtube a:hover {background: #c4302b; color: #fff;}
+.instagram a:hover {background: #ff924a; color: #fff;}
+.vk a:hover {background: #5d84ae; color: #fff;}
+.telegram a:hover {background: #249bd7; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+
+
+.contacts{
+    position: relative;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.avatar{
+    width:35vh;
+    margin: 0 auto 20px auto;
+}
+
+.avatar img{
+    width: inherit;
+    border-radius: 106px;
+}
+.links{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    margin: 20px;
+    text-align: center;
+}
+.links div img{
+    width: 5vw;
+    border-radius: 106px;
+}
+    .links a {
+        font-size: 2vw;
+    }
+.title{
+    text-align: center;
+}
+.title span {
+    font-size: calc(2vw + 1vh);
+}
+
+@media screen  and (min-width: 100px) and (max-width:980px) {
+    .avatar{
+        margin: 0 auto 20px auto;
+    }
+}
+@media screen  and (min-width: 992px)  {
+    .avatar{
+        margin: 0 0 20px auto;
+    }
+}
+@media screen and (min-width: 320px) and (max-width:520px){
+    .social a {
+        width: 8vw;
+        height: 8vw;
+    }
+}
+@media screen and (min-width: 100px) and (max-width:319px){
+    .social a {
+        width: 2vh;
+        height: 10vw;
+    }
+}

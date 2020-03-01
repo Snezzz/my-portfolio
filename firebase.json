@@ -1,0 +1,19 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    // Dynamic Links will start with https://bitnami-qdu86mnwzq.firebaseapp.contacts/contacts
+    "appAssociation": "AUTO",
+    "rewrites": [ { "source": "/contacts/**", "dynamicLinks": true } ]
+  },
+  "storage": {
+    "rules": "storage.rules.json"
+  }
+}

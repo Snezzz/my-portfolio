@@ -1,0 +1,13 @@
+.portfolio-projects b, .portfolio-projects ol li{
+    color:#ffb900;
+}
+
+.portfolio-projects ol{
+    margin-right: 20px;
+}
+.portfolio-projects ol li {
+    overflow-wrap: break-word;
+}
+.portfolio-projects p{
+    color:darkgray
+}

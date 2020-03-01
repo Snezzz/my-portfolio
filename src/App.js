@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MainComponent from "./Components/MainComponent/index";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {rootReducer} from "./reducers/mainReducer";
+import {createStore,applyMiddleware} from 'redux'
+import {NoMatchPage} from "./Components/NoMatchPage";
+import {connect} from "react-redux";
+import {connectDB} from "./actions/main";
+import thunk from "redux-thunk";
+import PortfolioContainer from "./Containers/PortfolioContainer";
+import ContactsContainer from "./Containers/ContactsContainer";
+import ProfileContainer from "./Containers/ProfileContainer"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const store = createStore(rootReducer,applyMiddleware(thunk));
+
+
+class App extends React.Component {
+
+
+    render() {
+        return (
+            <Router>
+                <MainComponent db={this.props.db}>
+                    <Switch>
+                        <Route exact path="/" component={ProfileContainer}/>
+                        <Route path="/works" component={PortfolioContainer}/>
+                        <Route path="/contacts" component={ContactsContainer}/>
+                        <Route component={NoMatchPage} />
+                    </Switch>
+                </MainComponent>
+            </Router>
+        );
+    }
 }
 
-export default App;
+const mapStateToProps = state => ({
+    db: state.dbReducer
+});
+
+const mapDispatchToProps = {
+    connectDB
+};
+export default connect(mapStateToProps,mapDispatchToProps)(App);
+

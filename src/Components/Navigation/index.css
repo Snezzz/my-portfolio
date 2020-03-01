@@ -1,0 +1,17 @@
+.navigation{
+    background-color: #282c34;
+    text-align: center;
+    padding: 15px;
+}
+
+.navigation a{
+    text-align: center;
+    color: #ffb900;
+    margin: 10px 10px 15px 10px;
+    font-size: 3vh;
+}
+
+.menu-item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

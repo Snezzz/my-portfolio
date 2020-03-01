@@ -1,0 +1,41 @@
+.user-avatar{
+    width:35vh;
+    margin: 12px auto 20px auto;
+}
+.user-avatar img{
+    width: inherit;
+    border-radius: 106px;
+}
+.user-about{
+    position: relative;
+    margin: 20px;
+}
+.user-information{
+    font-size: 24px;
+    text-align: justify;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+@media screen and (min-width: 100px) and (max-width: 1000px){
+    .user-information {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 1000px){
+    .user-information {
+        font-size: 12px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .user-information {
+        font-size: 18px;
+    }
+}
+@media screen  and (min-width: 992px)  {
+    .user-avatar{
+        margin: 20px 0 20px auto;
+    }
+
+}

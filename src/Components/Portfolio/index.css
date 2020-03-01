@@ -1,0 +1,63 @@
+.portfolio-body{
+    background-color: #282c34;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.portfolio li{
+    font-size: 20px;
+}
+.active{
+    background-color: #282c34;
+    color: #eeb00a !important;
+}
+.portfolio-navigation ul li{
+    list-style: none;
+    color: #282c34;
+}
+
+.portfolio-skills h4, .portfolio-projects h4{
+    text-align: center;
+    background-color: darkgray;
+    padding: 15px 15px 15px 15px;
+}
+.portfolio-navigation{
+    text-align: center;
+    background-color: #f0a015;
+    margin: 10px;
+}
+
+.skill{
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+}
+.skill img{
+    width: 120px;
+    border-radius: 160px;
+}
+.skill label{
+    font-size: 16px;
+    color:#7b8ca8;
+}
+.skill p{
+    height: 13vh;
+    display: grid;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    font-size: 19px;
+    color: #ffba02;
+}
+@media screen and (min-width: 100px) and (max-width: 900px){
+    .skill p{
+        font-size: 24px;
+    }
+    .skill img {
+        width: 160px;
+    }
+    .skill label{
+        font-size: 24px;
+    }
+    .portfolio li{
+        font-size: 16px;
+    }
+}
