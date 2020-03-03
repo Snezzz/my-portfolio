@@ -11,9 +11,12 @@
     ],
     // Dynamic Links will start with https://bitnami-qdu86mnwzq.firebaseapp.contacts/contacts
     "appAssociation": "AUTO",
-    "rewrites": [ { "source": "/contacts/**", "dynamicLinks": true } ]
-  },
-  "storage": {
-    "rules": "storage.rules.json"
+    "rewrites": [
+      { "source": "**",
+        "destination": "/index.html"}
+    ],
+    "storage": {
+      "rules": "storage.rules.json"
+    }
   }
 }

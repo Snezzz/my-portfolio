@@ -1,12 +1,11 @@
 import React from 'react'
-import {getData,toggleElement} from "../actions/main";
+import {getData} from "../actions/main";
 import connect from "react-redux/es/connect/connect";
 import Portfolio from "../Components/Portfolio/index"
 import {Route, Switch} from "react-router-dom";
 import Developer from "../Components/Portfolio/Developer/developer";
 import PhotoEditor from "../Components/Portfolio/PhotoEditor/photo-editor";
 import VideoMaker from "../Components/Portfolio/VideoMaker/video-maker";
-import lodash from "lodash";
 import {NoMatchPage} from "../Components/NoMatchPage";
 
 
@@ -16,9 +15,6 @@ class PortfolioContainer extends React.Component {
         let value = this.props.location.pathname.substr(7,this.props.location.pathname.lastIndex)
         this.props.getData(this.props.db,`/information/${value}`)
     };
-
-
-
 
     render() {
 

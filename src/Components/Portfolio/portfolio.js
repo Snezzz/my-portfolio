@@ -9,7 +9,7 @@ class Portfolio extends React.Component {
     toggleClass = (e) => {
         if(this.prev!=null){
             this.prev.className-=" active"
-        }xxx
+        }
         e.currentTarget.className+=" active";
         this.prev =  e.target;
 

@@ -1,10 +1,4 @@
 
-export const mainAction = (data) => {
-    return {
-        type: "ADD_CHILDREN",
-        data
-    }
-};
 export const aboutInfo = (info) => {
     return{
         type: "GET_ABOUT",
